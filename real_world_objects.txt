@@ -46,3 +46,7 @@ Behaviors: Drives, stops, turns, honks
 12. Elevator
     States: Floor Number, Door Status, Direction
     Behaviors: Move Up/Down, Open/Close Doors
+
+13. Coffee Maker
+    States: Water Level, Filter Clean/Dirty, On/Off
+    Behaviors: Brew Coffee, Heat Water, Beep
