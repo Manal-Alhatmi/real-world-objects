@@ -42,3 +42,7 @@ Behaviors: Drives, stops, turns, honks
 11. Alarm Clock
     States: Time Set, Alarm On/Off
     Behaviors: Ring, Snooze, Display Time
+
+12. Elevator
+    States: Floor Number, Door Status, Direction
+    Behaviors: Move Up/Down, Open/Close Doors
