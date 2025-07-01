@@ -54,3 +54,7 @@ Behaviors: Drives, stops, turns, honks
 14. Printer
     States: Ink Level, Paper Loaded, Connection Status
     Behaviors: Print, Scan, Cancel Print
+
+15. Toaster
+    States: Temperature Setting, Bread Inside/Empty
+    Behaviors: Toast, Pop-Up, Heat
