@@ -18,3 +18,7 @@ Behaviors: Drives, stops, turns, honks
 5. Television
    States: On/Off, Volume Level, Current Channel
    Behaviors: Display Image, Play Sound, Change Channel
+
+6. Washing Machine
+   States: Door Open/Closed, Wash Cycle, Water Level
+   Behaviors: Wash, Rinse, Spin
