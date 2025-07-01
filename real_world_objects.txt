@@ -6,3 +6,7 @@ Behaviors: Drives, stops, turns, honks
 2. Smartphone
    States: Battery Level, Screen On/Off, Signal Strength
    Behaviors: Call, Text, Take Photo, Vibrate
+
+3. Fan
+   States: Speed Level, On/Off, Oscillating
+   Behaviors: Spin, Stop, Change Speed
