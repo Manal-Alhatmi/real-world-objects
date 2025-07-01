@@ -1,0 +1,4 @@
+1. Car
+States: Parked or moving, engine on or off, fuel full or empty
+
+Behaviors: Drives, stops, turns, honks
