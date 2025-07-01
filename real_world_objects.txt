@@ -34,3 +34,7 @@ Behaviors: Drives, stops, turns, honks
 9. Bicycle
    States: Gear Position, Tire Pressure, Speed
    Behaviors: Move, Brake, Turn
+
+10. Light Bulb
+    States: On/Off, Brightness, Color (Smart Bulb)
+    Behaviors: Illuminate, Dim, Flicker
