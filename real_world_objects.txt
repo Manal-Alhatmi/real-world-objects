@@ -58,3 +58,7 @@ Behaviors: Drives, stops, turns, honks
 15. Toaster
     States: Temperature Setting, Bread Inside/Empty
     Behaviors: Toast, Pop-Up, Heat
+
+16. Chair
+    States: Occupied/Unoccupied, Reclined/Upright
+    Behaviors: Support, Swivel, Recline
