@@ -62,3 +62,7 @@ Behaviors: Drives, stops, turns, honks
 16. Chair
     States: Occupied/Unoccupied, Reclined/Upright
     Behaviors: Support, Swivel, Recline
+
+17. Mirror
+    States: Clean/Dirty, Orientation
+    Behaviors: Reflect, Fog Up
