@@ -22,3 +22,7 @@ Behaviors: Drives, stops, turns, honks
 6. Washing Machine
    States: Door Open/Closed, Wash Cycle, Water Level
    Behaviors: Wash, Rinse, Spin
+
+7. Microwave
+   States: Timer Set, Door Open/Closed, Power Level
+   Behaviors: Heat Food, Beep, Rotate Plate
