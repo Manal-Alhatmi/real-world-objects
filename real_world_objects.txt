@@ -50,3 +50,7 @@ Behaviors: Drives, stops, turns, honks
 13. Coffee Maker
     States: Water Level, Filter Clean/Dirty, On/Off
     Behaviors: Brew Coffee, Heat Water, Beep
+
+14. Printer
+    States: Ink Level, Paper Loaded, Connection Status
+    Behaviors: Print, Scan, Cancel Print
