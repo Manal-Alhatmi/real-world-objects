@@ -75,3 +75,7 @@ Behaviors: Drives, stops, turns, honks
     States: Open/Closed, Page Number, Bookmark Present
     Behaviors: Be Read, Flip Pages, Shelved
 
+20. Bottle
+    States: Full/Empty, Cap On/Off
+    Behaviors: Pour, Spill, Store Liquid
+
