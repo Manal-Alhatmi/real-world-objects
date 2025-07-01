@@ -10,3 +10,7 @@ Behaviors: Drives, stops, turns, honks
 3. Fan
    States: Speed Level, On/Off, Oscillating
    Behaviors: Spin, Stop, Change Speed
+
+4. Refrigerator
+   States: Temperature, Door Open/Closed, Power Status
+   Behaviors: Cool, Freeze, Light On/Off
