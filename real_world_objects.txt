@@ -14,3 +14,7 @@ Behaviors: Drives, stops, turns, honks
 4. Refrigerator
    States: Temperature, Door Open/Closed, Power Status
    Behaviors: Cool, Freeze, Light On/Off
+
+5. Television
+   States: On/Off, Volume Level, Current Channel
+   Behaviors: Display Image, Play Sound, Change Channel
