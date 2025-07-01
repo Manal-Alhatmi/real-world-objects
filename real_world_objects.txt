@@ -70,3 +70,8 @@ Behaviors: Drives, stops, turns, honks
 18. Umbrella
     States: Open/Closed, Wet/Dry
     Behaviors: Shield from Rain, Fold/Unfold
+
+19. Book
+    States: Open/Closed, Page Number, Bookmark Present
+    Behaviors: Be Read, Flip Pages, Shelved
+
