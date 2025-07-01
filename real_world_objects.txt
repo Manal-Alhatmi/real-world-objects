@@ -66,3 +66,7 @@ Behaviors: Drives, stops, turns, honks
 17. Mirror
     States: Clean/Dirty, Orientation
     Behaviors: Reflect, Fog Up
+
+18. Umbrella
+    States: Open/Closed, Wet/Dry
+    Behaviors: Shield from Rain, Fold/Unfold
