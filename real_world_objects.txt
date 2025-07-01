@@ -38,3 +38,7 @@ Behaviors: Drives, stops, turns, honks
 10. Light Bulb
     States: On/Off, Brightness, Color (Smart Bulb)
     Behaviors: Illuminate, Dim, Flicker
+
+11. Alarm Clock
+    States: Time Set, Alarm On/Off
+    Behaviors: Ring, Snooze, Display Time
