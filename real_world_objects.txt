@@ -26,3 +26,7 @@ Behaviors: Drives, stops, turns, honks
 7. Microwave
    States: Timer Set, Door Open/Closed, Power Level
    Behaviors: Heat Food, Beep, Rotate Plate
+
+8. Air Conditioner
+   States: Temperature Setting, Mode (Cool/Fan), Filter Status
+   Behaviors: Cool Room, Dehumidify, Fan Blows
