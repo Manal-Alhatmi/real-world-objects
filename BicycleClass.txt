@@ -1,0 +1,27 @@
+public class Bicycle {
+
+    int gearPosition = 1;     
+    int tirePressure = 30;    
+    int speed = 0;            
+
+    void move() {
+        speed = speed + gearPosition * 3;
+        System.out.println("Bicycle is moving at " + speed);
+    }
+
+    void brake() {
+        speed = speed - 5;
+        if (speed < 0) {
+            speed = 0;
+        }
+        System.out.println("Braking Speed is now " + speed);
+    }
+
+    void turn(String direction) {
+        System.out.println("Turning " + direction);
+    }
+
+    void printStates() {
+        System.out.println("gearPosition:" + gearPosition + " tirePressure:" + tirePressure + " speed:" + speed);
+    }
+}
