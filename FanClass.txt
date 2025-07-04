@@ -1,0 +1,31 @@
+public class Fan {
+
+    boolean isPoweredOn = false;  
+    int speed = 0;                
+
+    void powerToggle() {
+        if (isPoweredOn) {
+            isPoweredOn = false;
+            speed = 0;
+            System.out.println("Fan powered OFF");
+        } else {
+            isPoweredOn = true;
+            System.out.println("Fan powered ON");
+        }
+    }
+
+    void setSpeed(int newSpeed) {
+        if (isPoweredOn) {
+            if (newSpeed >= 0 && newSpeed <= 3) {
+                speed = newSpeed;
+                System.out.println("Speed set to level " + speed);
+            } else {
+            System.out.println("Cannot set speed Fan is off");
+        }
+    }
+
+   void printStates() {
+    System.out.println("powerOn:" + isPoweredOn + " speed:" + speed);
+
+    }
+}
