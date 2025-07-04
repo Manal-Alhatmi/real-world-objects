@@ -1,0 +1,38 @@
+public class CoffeeMaker {
+
+    int cupsMade = 0;
+    boolean hasFilter = false;
+    int temperature = 20;
+
+    void insertFilter() {
+        hasFilter = true;
+        System.out.println("Filter inserted");
+    }
+
+    void removeFilter() {
+        hasFilter = false;
+        System.out.println("Filter removed");
+    }
+
+    void startBrewing() {
+        if (hasFilter == true) {
+            cupsMade = cupsMade + 1;
+            temperature = temperature + 30;
+            System.out.println("Coffee is brewing");
+        } else {
+            System.out.println("Insert filter first");
+        }
+    }
+
+    void coolDown() {
+        temperature = temperature - 10;
+        if (temperature < 20) {
+            temperature = 20;
+        }
+        System.out.println("Cooling down");
+    }
+
+    void printStates() {
+        System.out.println("cupsMade:" + cupsMade + " hasFilter:" + hasFilter + " temperature:" + temperature);
+    }
+}
