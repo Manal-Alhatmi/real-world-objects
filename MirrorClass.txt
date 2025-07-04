@@ -1,0 +1,26 @@
+public class Mirror {
+
+    boolean isClear = true;
+
+    void showReflection() {
+        if (isClear == true) {
+            System.out.println("Reflection is clear");
+        } else {
+            System.out.println("Reflection is blurry");
+        }
+    }
+
+    void steamUp() {
+        isClear = false;
+        System.out.println("Mirror is now blurry");
+    }
+
+    void wipe() {
+        isClear = true;
+        System.out.println("Mirror is clean again");
+    }
+
+    void printStates() {
+        System.out.println("isClear:" + isClear);
+    }
+}
