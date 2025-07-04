@@ -1,0 +1,41 @@
+public class WashingMachine {
+
+    boolean doorOpen = true;     
+    int waterLevel = 3;          
+
+    void wash() {
+        if (doorOpen) {
+            System.out.println("Cannot start wash");
+        } else {
+            if (waterLevel == 0) {
+                System.out.println("No water");
+            } else {
+                System.out.println("Washing clothes with water level " + waterLevel);
+            }
+        }
+    }
+
+    void openDoor() {
+        doorOpen = true;
+        System.out.println("Door opened");
+    }
+
+    void closeDoor() {
+        doorOpen = false;
+        System.out.println("Door closed");
+    }
+
+    void setWaterLevel(int level) {
+        if (level >= 0) {
+            if (level <= 3) {
+                waterLevel = level;
+                System.out.println("Water level set to " + waterLevel);
+            } else {
+            System.out.println("Invalid water level");
+        }
+    }
+
+    void printStates() {
+        System.out.println("doorOpen:" + doorOpen + " waterLevel:" + waterLevel);
+    }
+}
