@@ -1,0 +1,30 @@
+public class AlarmClock {
+
+    String alarmTime = "06:30 AM";
+    boolean isOn = false;
+
+    void ring() {
+        if (isOn) {
+            System.out.println("Alarm is ringing");
+        } else {
+            System.out.println("Alarm is off");
+        }
+    }
+
+    void snooze() {
+        if (isOn) {
+            System.out.println("Snoozing for 5 minutes");
+        } else {
+            System.out.println("Alarm is off");
+        }
+    }
+
+    void setTime(String newTime) {
+        alarmTime = newTime;
+        System.out.println("Alarm time set to " + alarmTime);
+    }
+
+    void printStates() {
+        System.out.println("isOn: " + isOn + " | alarmTime: " + alarmTime);
+    }
+}
