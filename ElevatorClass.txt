@@ -1,0 +1,45 @@
+public class Elevator {
+
+    int floorNumber = 0;
+    boolean doorOpen = false;
+
+    void moveUp() {
+        if (doorOpen == false) {
+            floorNumber = floorNumber + 1;
+            System.out.println("Moved up to floor " + floorNumber);
+        } else {
+            System.out.println("Close doors to move");
+        }
+    }
+
+    void moveDown() {
+        if (doorOpen == false) {
+            if (floorNumber > 0) {
+                floorNumber = floorNumber - 1;
+                System.out.println("Moved down to floor " + floorNumber);
+            } else {
+                System.out.println("Already at ground floor");
+            }
+        } else {
+            System.out.println("Close doors to move");
+        }
+    }
+
+    void openDoors() {
+        doorOpen = true;
+        System.out.println("Doors opened");
+    }
+
+    void closeDoors() {
+        doorOpen = false;
+        System.out.println("Doors closed");
+    }
+
+    void printStates() {
+        String doorStatus = "Closed";
+        if (doorOpen == true) {
+            doorStatus = "Open";
+        }
+        System.out.println("floorNumber:" + floorNumber + " doorOpen:" + doorStatus);
+    }
+}
