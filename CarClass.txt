@@ -1,0 +1,36 @@
+1. Car
+
+
+public class Car {
+
+    boolean engineOn = false;
+    boolean moving = false;
+    int speed = 0;
+
+    void ignite() {
+        engineOn = true;
+        System.out.println("Engine started");
+    }
+
+    void move() {
+        if (engineOn) {
+            moving = true;
+            speed = 20;
+            System.out.println("Car is moving");
+        } else {
+            System.out.println("Start the engine first");
+        }
+    }
+
+    void stop() {
+        moving = false;
+        speed = 0;
+        System.out.println("Car stopped");
+    }
+
+    void printStates() {
+        System.out.println("Engine: " + (engineOn ? "On" : "Off")
+                + ", Moving: " + (moving ? "Yes" : "No")
+                + ", Speed: " + speed);
+    }
+}
