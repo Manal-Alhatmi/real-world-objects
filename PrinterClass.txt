@@ -1,0 +1,33 @@
+public class Printer {
+
+    int pagesPrinted = 0;
+    boolean hasInk = true;
+    boolean hasPaper = true;
+
+    void startPrint() {
+        if (hasInk == true) {
+            if (hasPaper == true) {
+                pagesPrinted = pagesPrinted + 1;
+                System.out.println("Printing page " + pagesPrinted);
+            } else {
+                System.out.println("No paper");
+            }
+        } else {
+            System.out.println("No ink");
+        }
+    }
+
+    void reloadPaper() {
+        hasPaper = true;
+        System.out.println("Paper reloaded");
+    }
+
+    void refillInk() {
+        hasInk = true;
+        System.out.println("Ink refilled");
+    }
+
+    void printStates() {
+        System.out.println("pagesPrinted:" + pagesPrinted + " hasInk:" + hasInk + " hasPaper:" + hasPaper);
+    }
+}
