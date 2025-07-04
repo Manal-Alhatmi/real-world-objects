@@ -1,0 +1,30 @@
+public class Book {
+
+    boolean isOpen = true;
+    int page = 5;
+
+    void openBook() {
+        isOpen = true;
+        page = 1;
+        System.out.println("Book is opened at page " + page);
+    }
+
+    void flipPage() {
+        if (isOpen == true) {
+            page = page + 1;
+            System.out.println("Flipped to page " + page);
+        } else {
+            System.out.println("You need to open the book first");
+        }
+    }
+
+    void closeBook() {
+        isOpen = false;
+        page = 0;
+        System.out.println("Book is now closed");
+    }
+
+    void printStates() {
+        System.out.println("isOpen:" + isOpen + " page:" + page);
+    }
+}
