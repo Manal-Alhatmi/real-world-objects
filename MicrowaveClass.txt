@@ -1,0 +1,52 @@
+public class Microwave {
+
+    int timer = 0;
+    boolean doorOpen = false;
+    int powerLevel = 5;
+
+    void heatFood() {
+        if (doorOpen) {
+            System.out.println("Can't heat");
+        } else {
+            if (timer == 0) {
+                System.out.println("Set timer first");
+            } else {
+                System.out.println("Heating for " + timer + " seconds at power " + powerLevel);
+                beep();
+                rotatePlate();
+            }
+        }
+    }
+
+    void beep() {
+        System.out.println("Beep");
+    }
+
+    void rotatePlate() {
+        System.out.println("Plate rotating");
+    }
+
+    void setTimer(int seconds) {
+        timer = seconds;
+        System.out.println("Timer set to " + timer);
+    }
+
+    void openDoor() {
+        doorOpen = true;
+        System.out.println("Door opened");
+    }
+
+    void closeDoor() {
+        doorOpen = false;
+        System.out.println("Door closed");
+    }
+
+    void setPowerLevel(int level) {
+        powerLevel = level;
+        System.out.println("Power level set to " + powerLevel);
+    }
+
+    void printStates() {
+        System.out.println("timer:" + timer + " doorOpen:" + doorOpen + " powerLevel:" + powerLevel);
+    }
+}
