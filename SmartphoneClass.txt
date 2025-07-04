@@ -1,0 +1,41 @@
+public class Smartphone {
+
+    int batteryLevel = 100;       
+    boolean screenActive = false; 
+
+    void takePhoto() {
+        if (screenActive) {
+            if (batteryLevel >= 10) {
+                System.out.println("Photo captured");
+                batteryLevel = batteryLevel - 5;
+            } else {
+                System.out.println("Battery too low to capture photo");
+            }
+        } else {
+            System.out.println("Cannot snap photo , screen is off");
+        }
+    }
+
+    void vibrate() {
+        if (batteryLevel >= 5) {
+            System.out.println("Phone is vibrating");
+            batteryLevel = batteryLevel - 2;
+        } else {
+            System.out.println("Battery too low to vibrate");
+        }
+    }
+
+    void toggleScreen() {
+        if (screenActive) {
+            screenActive = false;
+            System.out.println("Screen turned off");
+        } else {
+            screenActive = true;
+            System.out.println("Screen turned on");
+        }
+    }
+
+    void printStates() {
+        System.out.println("batteryLevel:" + batteryLevel + " screenActive:" + screenActive);
+    }
+}
