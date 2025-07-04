@@ -1,0 +1,45 @@
+public class Refrigerator {
+
+    boolean powerOn = true;    
+    int temperature = 5;       
+
+    void cool() {
+        if (powerOn) {
+            if (temperature > 0) {
+                temperature = temperature - 2;
+                System.out.println("Cooling Current temperature: " + temperature + "°C");
+            } else {
+                System.out.println("Temperature is already cool");
+            }
+        } else {
+            System.out.println("Cooling failed, power is off");
+        }
+    }
+
+    void freeze() {
+        if (powerOn) {
+            if (temperature > -18) {
+                temperature = temperature - 4;
+                System.out.println("Freezing Current temperature: " + temperature + "°C");
+            } else {
+                System.out.println("Already at freezing point");
+            }
+        } else {
+            System.out.println("Cannot freeze, Power is off");
+        }
+    }
+
+    void togglePower() {
+        if (powerOn) {
+            powerOn = false;
+            System.out.println("Refrigerator turned OFF");
+        } else {
+            powerOn = true;
+            System.out.println("Refrigerator turned ON");
+        }
+    }
+
+    void printStates() {
+        System.out.println("powerOn:" + powerOn + " temperature:" + temperature);
+    }
+}
