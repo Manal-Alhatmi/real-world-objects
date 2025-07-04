@@ -1,0 +1,40 @@
+public class Television {
+
+    boolean isOn = false;
+    int currentChannel = 1;
+
+    void displayImage() {
+        if (isOn) {
+            System.out.println("Now showing channel " + currentChannel);
+        } else {
+            System.out.println("TV is off");
+        }
+    }
+
+    void changeChannel(int newChannel) {
+        if (isOn) {
+            if (newChannel > 0) {
+                currentChannel = newChannel;
+                System.out.println("Switched to channel " + currentChannel);
+            } else {
+                System.out.println("Invalid channel number");
+            }
+        } else {
+            System.out.println("TV is off");
+        }
+    }
+
+    void togglePower() {
+        if (isOn) {
+            isOn = false;
+            System.out.println("TV turned OFF");
+        } else {
+            isOn = true;
+            System.out.println("TV turned ON");
+        }
+    }
+
+    void printStates() {
+        System.out.println("isOn:" + isOn + " currentChannel:" + currentChannel);
+    }
+}
