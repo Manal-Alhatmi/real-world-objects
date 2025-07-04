@@ -1,0 +1,33 @@
+public class Umbrella {
+
+    boolean isOpen = true;
+    boolean isWet = true;
+
+    void openUmbrella() {
+        isOpen = true;
+        System.out.println("Umbrella is now open");
+    }
+
+    void closeUmbrella() {
+        isOpen = false;
+        System.out.println("Umbrella is now closed");
+    }
+
+    void useInRain() {
+        if (isOpen == true) {
+            isWet = true;
+            System.out.println("Using umbrella in rain");
+        } else {
+            System.out.println("Cannot use");
+        }
+    }
+
+    void dryUmbrella() {
+        isWet = false;
+        System.out.println("Umbrella has dried");
+    }
+
+    void printStates() {
+        System.out.println("isOpen:" + isOpen + " isWet:" + isWet);
+    }
+}
