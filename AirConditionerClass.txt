@@ -1,0 +1,24 @@
+public class AirConditioner {
+
+    String mode = "Cool";
+
+    void coolRoom() {
+        if (mode == "Cool") {
+            System.out.println("Cooling the room");
+        } else {
+            System.out.println("Cannot cool in " + mode);
+        }
+    }
+
+    void setMode(String newMode) {
+        if (newMode == "Cool" || newMode == "Fan") {
+            mode = newMode;
+        } else {
+            System.out.println("Invalid mode: " + newMode);
+        }
+    }
+
+    void printStates() {
+        System.out.println("mode:" + mode);
+    }
+}
