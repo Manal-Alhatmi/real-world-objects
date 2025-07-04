@@ -1,0 +1,30 @@
+public class Bottle {
+
+    boolean hasWater = true;
+    boolean capClosed = false;
+
+    void pour() {
+        if (capClosed == true) {
+            System.out.println("Can't pour, cap is closed");
+        } else if (hasWater == false) {
+            System.out.println("Bottle is empty");
+        } else {
+            hasWater = false;
+            System.out.println("Pouring water");
+        }
+    }
+
+    void openCap() {
+        capClosed = false;
+        System.out.println("Cap is opened");
+    }
+
+    void closeCap() {
+        capClosed = true;
+        System.out.println("Cap is closed");
+    }
+
+    void printStates() {
+        System.out.println("hasWater:" + hasWater + " capClosed:" + capClosed);
+    }
+}
