@@ -1,0 +1,43 @@
+public class Toaster {
+
+    int level = 1;
+    boolean hasBread = false;
+    boolean isToasting = false;
+
+    void insertBread() {
+        hasBread = true;
+        System.out.println("Bread inserted");
+    }
+
+    void setLevel(int newLevel) {
+        if (newLevel >= 1) {
+            if (newLevel <= 5) {
+                level = newLevel;
+                System.out.println("Toasting level set to " + level);
+            } else {
+                System.out.println("Invalid level");
+            }
+        } else {
+            System.out.println("Invalid level");
+        }
+    }
+
+    void startToasting() {
+        if (hasBread == true) {
+            isToasting = true;
+            System.out.println("Toasting at level " + level);
+        } else {
+            System.out.println("No bread inside");
+        }
+    }
+
+    void stopToasting() {
+        isToasting = false;
+        hasBread = false;
+        System.out.println("Bread is ready");
+    }
+
+    void printStates() {
+        System.out.println("level:" + level + " hasBread:" + hasBread + " isToasting:" + isToasting);
+    }
+}
