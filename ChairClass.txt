@@ -1,0 +1,29 @@
+public class Chair {
+
+    boolean isOccupied = false;
+    boolean isReclined = false;
+
+    void sitDown() {
+        isOccupied = true;
+        System.out.println("Person is sitting");
+    }
+
+    void standUp() {
+        isOccupied = false;
+        isReclined = false;
+        System.out.println("Person stood up");
+    }
+
+    void leanBack() {
+        if (isOccupied == true) {
+            isReclined = true;
+            System.out.println("Chair is reclined");
+        } else {
+            System.out.println("Chair is empty");
+        }
+    }
+
+    void printStates() {
+        System.out.println("isOccupied:" + isOccupied + " isReclined:" + isReclined);
+    }
+}
